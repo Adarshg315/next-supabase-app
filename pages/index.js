@@ -39,11 +39,14 @@ export default function Home() {
       <div className={styles.dateCardContainer}>
         {dateCardArray.map((item) =>
           <button key={item.day} className={styles.pushable} onClick={() => onDateClick()}>
+            <span className={styles.shadow}></span>
+            <span className={styles.edge}></span>
             <span className={styles.front}>
               {item.date} {'Jan'}
             </span>
           </button>)
         }
+
       </div>
     </div >
   );
