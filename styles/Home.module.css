@@ -1,53 +1,63 @@
 .container {
-  color: #d8d8d8;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.dateCardContainer {
+	/* border: 1px solid grey; */
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 20px;
+	flex-flow: row wrap;
+	padding: 2rem;
 }
 
-.button {
-  border: 1px solid #f35815;
-  background-color: transparent;
-  color: #d8d8d8;
-  padding: 0.5rem 2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 1.5rem;
+/* .dateCard {
+	border: 1px solid gray;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 250ms;
+} */
+
+/* .dateCard:hover {
+	border: 0px solid white;
+	cursor: pointer;
+	background-color: lightgray;
+	color: black;
+	transform: scale(1.2);
+} */
+
+/* .date {
+	font-size: 5rem;
+} */
+
+.pushable {
+	background: hsl(340deg 100% 32%);
+	border-radius: 12px;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline-offset: 4px;
+}
+.front {
+	display: block;
+	padding: 12px 42px;
+	border-radius: 12px;
+	font-size: 1.25rem;
+	background: hsl(345deg 100% 47%);
+	color: white;
+	transform: translateY(-6px);
 }
 
-.workoutHeading {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.email {
-  color: #f35815;
-}
-
-.noWorkout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.loading {
-  color: #f35815;
-  margin-top: 1rem;
-}
-
-.loading {
-  text-align: center;
-  color: #d8d8d8;
-  height: 100vh;
+.pushable:active .front {
+	transform: translateY(-2px);
 }

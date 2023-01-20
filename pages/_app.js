@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <div>
-      <Navbar session={session} />
+      {/* <Navbar session={session} /> */}
       <Component {...pageProps} session={session} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
